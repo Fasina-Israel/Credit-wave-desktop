@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { useState } from 'react';
 import { Box } from '@mui/material';
 
-export const Button = ({ children, shadow, bgcolor = colors.nemtBlue, color = 'white', width = '157px',onClick=()=>null }) => {
+export const Button = ({ children, shadow, bgcolor = '#00C795', color = 'white', width = '100%',onClick=()=>null }) => {
   const [hover, setHover] = useState(false);
   return (
     <div className={styles.wrapper} >

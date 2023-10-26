@@ -26,58 +26,13 @@ function App() {
                             <Redirect to="/login" />
                         </Route> */}
                 {/* <Route exact path="/" element={<LandingPage />} /> */}
-                <Route exact path="/login" element={<Login />} />
+                <Route exact path="/landing-page" element={<Login />} />
+                <Route exact path="/otp" element={<Otp />} />
                 <Route exact path="/verification" element={<Otp />} />
                 {/* <Route exact path="/dashboard" element={<Dashboard />} /> */}
-                <Route exact path="/admin" element={<MainBoard />}>
-                  <Route exact path="/admin/complete" element={<Complete />} />
-                  <Route
-                    exact
-                    path="/admin/update_profile"
-                    // element={<UpdateProfile />}
-                  />
-                  <Route
-                    exact
-                    path="/admin/empty_dashboard"
-                    // element={<EmptyDashboard />}
-                  />
-                  <Route
-                    exact
-                    path="/admin/empty_dashboard-addProgram"
-                    // element={<EmptyDashboardAddProgram />}
-                  />
-                  <Route
-                    exact
-                    path="programme"
-                    // element={<ProgramActiveComponents />}
-                  />
-                  <Route
-                    exact
-                    path="programme/:programId/cohort/:programName"
-                    // element={<TrainingInstituteCohort />}
-                  />
-                  <Route
-                    exact
-                    path="/admin/settings"
-                    // element={<UpdateInstituteProfile />}
-                  />
-                  <Route
-                    exact
-                    path="/admin/settings/editprofile"
-                    // element={<UpdateEdit />}
-                  />
-                  {/* <Route exact path="programme" element={<ProgramActiveComponents />} /> */}
-                  {/* <Route exact path="programme/:programId/cohort/:programName" element={<TrainingInstituteCohort />} /> */}
-                  <Route
-                    exact
-                    path="/admin/Institute_Profile"
-                    // element={<NavProfile />}
-                  />
-                  <Route
-                    exact
-                    path="programme/:programId/cohort/:programName/:cohortId/trainee"
-                    // element={<AddTrainee />}
-                  />
+                <Route exact path="/dashboard" element={<MainBoard />}>
+                  <Route exact path="/dashboard/complete" element={<Complete />} />
+                  
                 </Route>
                 {/* <Route exact path="*" element={<Error404 />} /> */}
               </Route>

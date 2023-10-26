@@ -99,6 +99,11 @@
     column-gap: 20px;
 
 }
+.otp-page{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 .phone-input {
     width: 22vw;

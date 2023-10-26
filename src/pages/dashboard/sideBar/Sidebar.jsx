@@ -3,8 +3,8 @@ import { upperLinks, lowerLinks } from './SidebarLinks';
 import { FaBars } from 'react-icons/fa';
 import './Sidebar.css';
 import Dashboard from '../../../assets/Dashboard.svg';
-import LearnspaceIcon from '../../../assets/learnspace-icon.svg';
-import MobileLearnspace from '../../../assets/MobileLearnspace.svg';
+import LearnspaceIcon from '../../../assets/AdroitCollapse.png';
+import AdroitLogo from "../../../assets/AdroitDashboard.png";
 import { NavLink } from 'react-router-dom';
 import { DashboardContext } from '../Dashboard';
 import { useSelector } from 'react-redux';
@@ -30,7 +30,7 @@ function Sidebar() {
             {width === '200px' ? (
                 <div className="sidebar-container" style={{ width: width }}>
                     <div className="sidebar-logo">
-                        <img src={MobileLearnspace} alt="logo" />
+                        <img src={AdroitLogo} alt="logo" />
                     </div>
                     <div className="sidebarLinks-container">
                         <div className="sidebar-cont" aria-disabled={true}>

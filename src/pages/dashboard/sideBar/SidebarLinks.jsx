@@ -19,13 +19,13 @@ export const lowerLinks = [
         text: 'Settings',
         icon: <FaRegSun />
     },
-    {
-        id: 8,
-        type: 'function',
-        render: ({ handleLogoutModal, LogOutModal }) => <Logout handleLogoutModal={handleLogoutModal} LogOutModal={LogOutModal} />,
-        text: 'Logout',
-        icon: <FaSignOutAlt />
-    }
+    // {
+    //     id: 8,
+    //     type: 'function',
+    //     render: ({ handleLogoutModal, LogOutModal }) => <Logout handleLogoutModal={handleLogoutModal} LogOutModal={LogOutModal} />,
+    //     text: 'Logout',
+    //     icon: <FaSignOutAlt />
+    // }
 ];
 
 export const social = [

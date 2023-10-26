@@ -145,7 +145,7 @@ function Mainbar() {
                   height: "70px",
                   top: "50px",
                   right: "40px",
-                  background: "#fff",
+                  background: "none",
                   border: "none",
                   position: "relative",
                   cursor: "pointer",

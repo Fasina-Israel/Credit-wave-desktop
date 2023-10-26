@@ -11,10 +11,16 @@
     display: flex;
     flex-direction: row;
 }
+.content-header{
+    display:flex;
+    flex-direction:column;
+    height: 60%;
+    gap:10%;
+}
 
 .contentBackground-container1{
     width:50%;
-    background-color: #EDF3FE;
+    background-color: #00C795;
     height:100vh;
     justify-content: center;
     align-items: center;
@@ -42,16 +48,20 @@
 
 }
 .contentBackground-container2 .header{
-    background-color: #fff;;
+    background-color: #fff;
+    display: flex;
     height: 34%;
     width:80%;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 .contentBackgroundImage{
     width: 80%;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
     display: flex;
     padding-top: 2rem;
 }
@@ -70,6 +80,13 @@ h6{
         flex-grow: 0;
         /* width: 75%; */
 }
+h1{
+    font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        color:#fff
+}
 
 h5{
     width: 85%;
@@ -80,7 +97,7 @@ h5{
     font-size: 15px;
     line-height: 17px;
     letter-spacing: -0.00em;
-    color: #6F6F6F;
+    /* color: #6F6F6F; */
 }
 .input{
     flex-direction: row;
@@ -111,10 +128,12 @@ h5{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap:0.8rem;
+    
 }
 .form-button{
-    background-color: #2D6CDF;
+    background-color: #00C795;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 0.5rem;
@@ -122,7 +141,7 @@ h5{
     width: 80%;
     height:100%;
     color: #fff;
-    border-color: none;
+    border-color: #00C795;
     border-radius: 5px;
 }
 .forgot-password{
@@ -195,7 +214,7 @@ color: #2D6CDF;
         /* width: 75%; */
 }
 .contentBackground-container2 .header{
-    background-color: #fff;;
+    background-color: #fff;
     height: 100%;
     width:100%;
 
@@ -246,6 +265,6 @@ h5{
     font-size: 15px;
     line-height: 17px;
     letter-spacing: -0.00em;
-    color: #6F6F6F;
+    /* color: #6F6F6F; */
 }
 }

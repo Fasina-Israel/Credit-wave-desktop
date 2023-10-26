@@ -1,0 +1,13 @@
+#activeProfile {
+    background-color: #0EAA4F;
+    color: #FFF
+}
+
+.warningDiv:hover+.hide {
+    color: red;
+    display: block
+}
+
+.hide {
+    display: none;
+}

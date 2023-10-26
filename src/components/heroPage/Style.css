@@ -1,0 +1,292 @@
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+ @import url('https://fonts.cdnfonts.com/css/satoshi');
+
+.hero-container{
+    width:100%;
+    height: 782px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* animation-name: container;
+    animation-duration: 5s; */
+}
+
+/* @keyframes container {
+    from { background-color: black;}
+    to { background-color: brown;}
+} */
+.hero-content{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    animation: mymove 5s ease-in-out;
+    
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from {right: -100%;}
+    to {right: 0%;}
+}
+
+.link{
+    justify-content:flex-end;
+    align-items:center;
+    display:flex; 
+    flex-direction:row; 
+     gap: 2rem;
+    width:100%;
+}
+ .apple-button{
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    color: black;
+    background-color: #FFFFFF;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.apple-button .text{
+    font-family: "Merriweather";
+    font-size: 12px;
+}
+.google-button{
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    color: black;
+    background-color: #FFFFFF;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+.google-button .text{
+    font-family: "Merriweather";
+    font-size: 12px;
+}
+
+
+.link2{
+    justify-content:center;
+    align-items:center;
+    display:flex; 
+    flex-direction:row; 
+    gap:2rem; 
+    width:50%;
+}
+.header h1{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.004em;
+    color: #FFFFFF;
+
+}
+
+.header  .h3{
+    width: 754px;
+    height: 101px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.004em;
+    color: #FFFFFF;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+    width: 219px;
+    height: 63px;
+    animation-timing-function: linear;
+    background: #2D6CDF;
+    border-radius: 40px;
+    color:white;
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
+}
+
+@media only screen and (max-width: 1024px){
+    .hero-container{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 0rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .link{
+        justify-content:center;
+        align-items:center;
+        display:flex; 
+        flex-direction:row; 
+        gap: 1rem;
+        width:100%;
+        height: 20vh;
+    }
+    .link1{
+        justify-content:space-between;
+        align-items:center;
+        display:flex; 
+        flex-direction:row; 
+        gap:1rem; 
+        /* width:50%; */
+        width: 100%;
+        /* margin-top: 6rem; */
+        
+    }
+    .link2{
+        justify-content:space-evenly;
+        align-items:center;
+        display:flex; 
+        flex-direction:column; 
+        gap:2rem; 
+        width:50%;
+    }
+    .apple-button{
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        color: black;
+        background-color: #FFFFFF;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+        border-color: #FFFFFF;
+        border-width: 0px;
+        cursor: pointer;
+    }
+    .apple-button .text{
+        font-size: 11px;
+    }
+    .google-button{
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        color: black;
+        background-color: #FFFFFF;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+        border-color: #FFFFFF;
+        border-width: 0px;
+        cursor: pointer;
+    }
+    .google-button .text{
+        font-family: "Merriweather";
+        font-size: 11px;
+    }
+    .img2 .g-img{
+        height: 0.7rem
+    }
+
+    @keyframes mymove {
+        from {bottom: -100%;}
+        to {bottom: 0%;}
+    }
+    .hero-content{
+        margin-top: 2rem;
+        width: 90%;
+        height: 65vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* background-color: brown; */
+        gap: 5rem;
+        position: relative;
+        animation: mymove 3s ease-in-out;
+        padding-bottom: 7rem;
+    
+    }
+    .header{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap:4rem;
+        margin-top: 5rem;
+    }
+    .header h1{
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        width: 100%
+    
+    }
+    .header  .h3{
+        width: 100%;
+        height: 90px;
+        font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .btn-Class{
+        height: 20vh;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 24px;
+        gap: 8px;
+        font-family: 'Satoshi';
+        width: 167px;
+        height: 48px;
+        background: #2D6CDF;
+        border-radius: 40px;
+        color:white;
+        outline: none;
+        border: none;
+    }
+
+}

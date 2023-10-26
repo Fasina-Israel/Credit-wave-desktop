@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
+.coordinate-container{
+    width:100%;
+    height: 900px;
+    background-color: #FAFAFA;;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.coordinate-content{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coordinate-header{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.004em;
+    height: 10%;
+}
+.coordinate-header h3{
+    color: #272727;
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.coordinate-dispatch{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.telephone{
+    width: 300px;
+    height: 326px;
+    display: flex;
+    background-image: url(../../assets/image/TelephoneBackground.svg);
+    /* display:none */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.coordinate-dispatch .auto-dispatch{
+   
+    height: 100%;
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Satoshi';
+}
+.coordinate-dispatch .manage-drivers{
+    
+    height: 100%;
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satoshi';
+}
+.coordinate-dispatch .desktop-telephone{
+  
+    height: 100%;
+    width: 40%;
+    padding: 1rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.desktop-telephone{
+    width: 300px;
+    height: 326px;
+    display: flex;
+    /* background-image: url(../../assets/image/TelephoneBackground.svg); */
+    /* display:none */
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+@media only screen and (max-width: 1024px){
+    .coordinate-container{
+        width:100%;
+        height: 782px;
+        background-color: #FAFAFA;;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .coordinate-content{
+        width: 90%;
+        /* height: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    .coordinate-header{
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.004em;
+        height: 10%;
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+    .coordinate-header h3{
+        color: #272727;
+        font-family: 'Merriweather';
+        font-size: 24px;
+        width: 100%;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+    }
+    .telephone{
+        width: 300px;
+        height: 326px;
+        display: flex;
+        background-image: url(../../assets/image/TelephoneBackground.svg);
+        
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .desktop-telephone{
+        
+        display: none;
+    }
+    .coordinate-dispatch{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        /* background-color: red; */
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .coordinate-dispatch .auto-dispatch{
+        height: 100%;
+        width: 100%;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Satoshi';
+        gap: 2rem;
+    }
+    .coordinate-dispatch .manage-drivers{
+        height: 100%;
+        width: 100%;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Satoshi';
+        gap: 2rem;
+    }
+}

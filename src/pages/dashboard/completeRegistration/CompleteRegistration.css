@@ -1,0 +1,390 @@
+:root {
+
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+
+    --clr-primary-5: hsl(205, 78%, 60%);
+
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.00;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0.5;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    line-height: 0.5;
+    color: var(--clr-grey-5);
+}
+
+.complete-container {
+    height: 80vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #fff;
+}
+
+.complete-form-header {
+    width: 95%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complete-form-details {
+    width: 100%;
+    justify-content: center;
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.complete-form-input {
+    width: 90%;
+    flex-direction: row;
+}
+
+.complete-form-input-addProduct {
+    width: 90%;
+    justify-content: space-evenly;
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.input-field {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #d0d5dd;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 200 !important;
+}
+
+.form1 {
+    width: 90%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    height: 6rem;
+}
+
+.form2 {
+    width: 90%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    height: 6rem;
+}
+
+.form3 {
+    width: 42.5%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    height: 7rem;
+}
+
+.complete-form-logo {
+    width: 22%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.institute-name {
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+.contact-person {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem
+}
+
+.contact-details {
+    width: 50%;
+}
+
+.contact-person-header {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans';
+    line-height: 16px;
+}
+
+.contact-person-details {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans';
+    line-height: 16px;
+}
+
+.complete-button {
+    justify-content: center;
+    height: 3rem;
+    margin-top: 5rem;
+    flex-direction: row;
+}
+
+.button {
+    background-color: #0D9B48;
+    cursor: pointer;
+    color: #fff
+}
+
+.complete-ref-form::placeholder {
+    font-size: 16px;
+    font-weight: 100;
+    color: gray;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    font-weight: lighter;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: gray;
+    font-weight: lighter;
+
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: gray;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 992px) {
+    h3 {
+        font-size: 1.00rem;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 900;
+        line-height: 0.5;
+    }
+
+    p {
+        line-height: 1.5;
+        color: var(--clr-grey-5);
+    }
+
+    .complete-container {
+        height: 90%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background: #fff;
+    }
+
+    .complete-form-header {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .complete-form-details {
+        width: 100%;
+        justify-content: space-between;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .complete-form-input {
+        width: 100%;
+        height: 2rem;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .complete-form-logo {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0rem;
+        height: 3rem;
+    }
+
+    .form2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0rem;
+        height: 3rem;
+    }
+
+    .form3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0rem;
+        height: 3rem;
+    }
+
+    .complete-input-field {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #d0d5dd;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .contact-person {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+    }
+
+    .contact-button {
+        justify-content: center;
+        display: flex;
+        margin-top: rem;
+        width: 90%;
+    }
+
+    .button {
+        background-color: #0D9B48;
+        cursor: pointer;
+        width: 90%;
+        padding: 0 8rem;
+    }
+
+    .institute-name {
+        width: 90%;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .complete-ref-mobile {
+        width: 94.5% !important;
+    }
+}

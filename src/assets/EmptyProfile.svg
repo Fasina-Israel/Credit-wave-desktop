@@ -1,0 +1,23 @@
+<svg width="142" height="151" viewBox="0 0 142 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M139.5 71C139.5 108.832 108.832 139.5 71 139.5C33.1685 139.5 2.5 108.832 2.5 71C2.5 33.1685 33.1685 2.5 71 2.5C108.832 2.5 139.5 33.1685 139.5 71Z" fill="#E7F7ED" stroke="white" stroke-width="5"/>
+<path d="M89.75 46.75H51.25C48.2124 46.75 45.75 49.2124 45.75 52.25V90.75C45.75 93.7876 48.2124 96.25 51.25 96.25H89.75C92.7876 96.25 95.25 93.7876 95.25 90.75V52.25C95.25 49.2124 92.7876 46.75 89.75 46.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M95.25 79.75L81.5 66L51.25 96.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.875 66C63.1532 66 65 64.1532 65 61.875C65 59.5968 63.1532 57.75 60.875 57.75C58.5968 57.75 56.75 59.5968 56.75 61.875C56.75 64.1532 58.5968 66 60.875 66Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#filter0_d_5600_91928)">
+<circle cx="118.5" cy="127.5" r="15" fill="white"/>
+<path d="M125.375 122.344H122.719L122.086 120.57C122.042 120.449 121.962 120.344 121.857 120.27C121.751 120.196 121.625 120.156 121.496 120.156H115.504C115.24 120.156 115.004 120.322 114.916 120.57L114.281 122.344H111.625C110.762 122.344 110.062 123.043 110.062 123.906V132.812C110.062 133.676 110.762 134.375 111.625 134.375H125.375C126.238 134.375 126.938 133.676 126.938 132.812V123.906C126.938 123.043 126.238 122.344 125.375 122.344ZM125.531 132.812C125.531 132.898 125.461 132.969 125.375 132.969H111.625C111.539 132.969 111.469 132.898 111.469 132.812V123.906C111.469 123.82 111.539 123.75 111.625 123.75H115.271L115.605 122.816L116.053 121.563H120.945L121.393 122.816L121.727 123.75H125.375C125.461 123.75 125.531 123.82 125.531 123.906V132.812ZM118.5 125C116.773 125 115.375 126.398 115.375 128.125C115.375 129.852 116.773 131.25 118.5 131.25C120.227 131.25 121.625 129.852 121.625 128.125C121.625 126.398 120.227 125 118.5 125ZM118.5 130C117.465 130 116.625 129.16 116.625 128.125C116.625 127.09 117.465 126.25 118.5 126.25C119.535 126.25 120.375 127.09 120.375 128.125C120.375 129.16 119.535 130 118.5 130Z" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_d_5600_91928" x="95.5" y="112.5" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.725 0 0 0 0 0.725 0 0 0 0 0.725 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5600_91928"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5600_91928" result="shape"/>
+</filter>
+</defs>
+</svg>
+

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sathoshi','Roboto';
+
+}
+
+:root {
+    --mainColor: #F5F5F5;
+    --textColor: #4B4B4B;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 3rem; */
+    height: 80px;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 0 3rem;
+}
+
+.qwipLogo{
+    height:4rem
+}
+.container h3{
+    font-family: 'Satoshi';
+}
+
+.link-container .link a{
+    font-family: 'Satoshi' Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a h4{
+    font-family: 'Satoshi';
+    font-weight: 500;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #000
+}
+
+nav a{
+    margin: 0 0.1rem 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a :hover{
+    color:#4B4B4B;
+}
+
+nav .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .nav-btn{
+    cursor: pointer;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* margin-left: 40rem; */
+}
+@media only screen and (max-width: 1024px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0 3rem; */
+        height: 70px;
+        background-color: var(--mainColor);
+        color: var(--textColor);
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        /* gap: 1.5rem; */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .link-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .link-container .link a{
+        font-family: 'Satoshi' Arial, Helvetica, sans-serif;
+    }
+
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+   }
+
+   header .responsive_nav{
+        transform: none;
+   }
+   nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+   }
+
+   .login{
+    display: 'none';
+    visibility: hidden;
+   }
+   
+}

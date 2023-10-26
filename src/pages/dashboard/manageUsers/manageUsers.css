@@ -1,0 +1,40 @@
+.manage-users-container {
+
+  height: 580px;
+  width: 65vw;
+  background-color: #fff;
+  position: 'relative';
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.manage-users-info {
+
+  padding: 5rem 0;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  top: 300px;
+  left: -300px;
+}
+
+td,
+th {
+
+  text-align: left;
+  padding: 1.6rem;
+  font-family: 'IBM Plex Sans';
+}
+
+.manage-users-button-container {
+  width: 100%;
+  margin-top: 26px;
+
+  /* height: 50%; */
+
+}
+
+.manage-users-btn {}

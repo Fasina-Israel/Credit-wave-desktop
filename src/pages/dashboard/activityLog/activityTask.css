@@ -1,0 +1,53 @@
+
+
+.activity-log-container{
+   width: 100%;
+   min-height: 100px;
+}
+
+.activity-log h2{
+        width: 493px;
+        height: 22px;
+    
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #101828; 
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+}
+.activity-log p{
+        width: 493px;
+        height: 19px;
+    
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    
+        color: #72757A;
+    
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+}
+.activity-log-lists{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.activity-log-lists ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-direction: row;
+}

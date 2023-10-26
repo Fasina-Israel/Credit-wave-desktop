@@ -1,0 +1,78 @@
+.invite-page-container{
+    width: 99.5vw;
+    height: 96.9vh;
+    
+}
+.invite-page-second-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+  
+}
+.close-icon{
+   position: absolute;
+   top: 1%;
+   left: 90%;
+   cursor: pointer;
+}
+.invite-writeup{
+    position: absolute;
+    padding: 1rem 1rem;
+    width: 20%;
+    align-content: center;
+    left: 30%;
+    top: 5%;
+}
+.invite-writeup h2{
+   font-family: 'IBM Plex Sans';
+   margin: 1rem 6rem;
+   font-style: normal;
+   font-weight: 700;
+}
+.invite-paragraphs{
+    position: absolute;
+    width: 17%;
+    top: 12%;
+    left: 33%;
+}
+.invite-paragraphs p{
+    color: black;
+    
+}
+.invite-paragraphs p span{
+  margin: 0 .4rem;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  color: black;
+}
+.add-more-input{
+    position: relative;
+    left: 0;
+    top: 30%;
+}
+.add-more-class{
+    display: flex;
+    background: #ECFDF3;
+    width: 7%;
+    height: 4%;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 40%;
+    left: 72.4%;
+    border: none;
+}
+.add-more-class button{
+    background-color: transparent;
+    border: none;
+}
+.add-more-class p{
+    width: 100%;
+}
+.add-more-input-label{
+    position: relative;
+    left: 0;
+    top: 34%;
+}
+
+

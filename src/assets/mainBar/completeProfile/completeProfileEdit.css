@@ -1,0 +1,84 @@
+.main-container {
+    height: 64vh;
+    padding-bottom: 3rem;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.sec-div {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.sec-div h4 {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.company-description-p {
+    width: 70%;
+    height: 85px;
+    margin-left: 3rem;
+
+}
+
+.major {
+    margin-left: 3rem;
+    width: 120%;
+    /* height: 15%; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.email-address {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ema {
+    width: 90%;
+    height: 40%;
+    margin-bottom: -.5rem;
+}
+
+.ema h4 {
+    margin-left: -.1rem;
+    width: 100%;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.locations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.locations h4 {
+    display: flex;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    margin-left: -.1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -.2rem;
+}
+
+.hide {
+    display: none
+}

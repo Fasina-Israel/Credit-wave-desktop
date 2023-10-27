@@ -8,11 +8,14 @@ import { Box, Input, Typography } from "@mui/material";
 import { Button } from "../../components/button/index";
 import AdroitLogo from "../../assets/Group.png";
 import Lock from "../../assets/lock.png";
+import { Formik, Field } from "formik";
+import validator from "validator";
+import { TailSpin } from "react-loader-spinner";
 
 const Otp = () => {
   // const navigate = useNavigate();
   const [otp, setOtp] = React.useState("");
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (newValue) => {
     setOtp(newValue);
@@ -21,55 +24,21 @@ const Otp = () => {
   return (
     <>
       <section className="contentBackground-container-otp">
-        {/* <div className="contentBackground-container1">
-                    <div className="contentBackgroundImage">
-                        <img src={ContentImage} alt="" style={{ height: '33rem' }} />
-                    </div>
-                </div> */}
-
-        <Box
-          sx={{
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Box
-            sx={{
-              height: "20%",
-              marginBottom: "5%",
-            }}
-          >
+        <div className="otp-container">
+          <div className="otp-header-image">
             <img src={AdroitLogo} alt="" />
-          </Box>
-          <Box
-            sx={{
-              justifyContent: "center",
-              alignItems: "center",
-              display: "flex",
-              flexDirection: "column",
-              gap: "2rem",
-              padding: "2rem",
-              width: "60%",
-              boxShadow: " 0 3px 10px rgb(0 0 0 / 0.2)",
-            }}
-          >
-            <Box>
-              <img src={Lock} alt="" />
-            </Box>
-            <Box
-              sx={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <Typography sx={{ fontWeight: "600", fontSize: "28px", color:'#135D54' }}>
+          </div>
+          <div className="lockImage-container">
+            <div className="lock-jpeg">
+              <img src={Lock} alt="" className="jpg" />
+            </div>
+            <div className="verification-container">
+              <Typography
+                sx={{ fontWeight: "600", fontSize: "28px", color: "#135D54" }}
+              >
                 Verification Login
               </Typography>
-              <Box sx={{ width: "80%" }}>
+              <div className="subtext">
                 <Typography
                   sx={{
                     fontSize: "16px",
@@ -80,12 +49,12 @@ const Otp = () => {
                   Enter the six (6) digit verification code sent to
                   +234913*****4** and A******na@creditwaveng.com to continue
                 </Typography>
-              </Box>
-            </Box>
+              </div>
+            </div>
 
             <Box
               sx={{
-                width: "240px",
+                width: "300px",
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
@@ -93,33 +62,102 @@ const Otp = () => {
                 gap: "20px",
               }}
             >
-              <Input
-                sx={{ borderColor: "black", width: "100%" }}
-                placeholder="Verification code"
-              />
-              {/* <Button children={"Submit"} /> */}
-              <Box
-                sx={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  borderColor: "#00C795",
+              {/* <div className="form"></div> */}
+              <Formik
+                initialValues={{
+                  email: "",
+                  password: "",
+                }}
+                validate={(values) => {
+                  const errors = {};
+                  if (!values.email) {
+                    errors.email = "Email cannot be empty !";
+                  } else if (!validator.isEmail(values.email)) {
+                    errors.email = "Please enter a valid email !";
+                  }
+                  if (!values.password) {
+                    errors.password = "Password cannot be empty !";
+                  }
+                  return errors;
+                }}
+                onSubmit={(values, { setSubmitting }) => {
+                  // submit(values);
+                  setSubmitting(false);
                 }}
               >
-                <button
-                  className="form-button"
-                  type="submit"
-                  variant="contained"
-                  //   disabled={!isValid || !dirty}
-                >
-                  {/* {loading && <TailSpin color="#FFF" height={20} width={20} />} */}
-                  Submit
-                </button>
-              </Box>
+                {({
+                  isValid,
+                  values,
+                  errors,
+                  dirty,
+                  touched,
+                  handleSubmit,
+                  handleBlur,
+                }) => (
+                  <form onSubmit={handleSubmit}>
+                    <div>
+                      <div>
+                        <div className="input-container">
+                          <div className="input-header">
+                            <h4 className="input-header-text">Login</h4>
+                          </div>
+                          <div className="input-section">
+                            <Field
+                              className="otp-input"
+                              id="name"
+                              type="text"
+                              name="name"
+                              value={values.name}
+                              onBlur={handleBlur}
+                              placeholder="Verification code"
+                            />
+
+                            <div className="error-message">
+                              {touched.email && errors.email ? (
+                                <div>{errors.email}</div>
+                              ) : null}
+                            </div>
+                          </div>
+                          {/* <div>
+                          <h5
+                            className="forgot-password"
+                            onClick={() => {
+                              navigate("/forgot-password");
+                            }}
+                          >
+                            Forgot Password ?
+                          </h5>
+                        </div> */}
+                          <Box
+                            sx={{
+                              width: "100%",
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                            }}
+                          >
+                            <button
+                              className="form-button"
+                              type="submit"
+                              variant="contained"
+                              disabled={!isValid || !dirty}
+                            >
+                              {loading && (
+                                <TailSpin color="#FFF" height={20} width={20} />
+                              )}
+                              Submit
+                            </button>
+                          </Box>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                )}
+              </Formik>
+              {/* <Button children={"Submit"} /> */}
             </Box>
-          </Box>
-        </Box>
+          </div>
+        </div>
       </section>
     </>
   );

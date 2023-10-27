@@ -43,7 +43,11 @@ const Login = () => {
         </div>
         <div className="contentBackground-container2">
           <div className="header">
-            <img src={AdroitLogo} alt="" style={{ backgroundColor: "white" }} />
+            <img
+              src={AdroitLogo}
+              alt=""
+              style={{ backgroundColor: "white", width: "70%" }}
+            />
           </div>
           <div className="form">
             <Formik
@@ -162,7 +166,7 @@ const Login = () => {
                             {loading && (
                               <TailSpin color="#FFF" height={20} width={20} />
                             )}
-                            Login
+                            Logins
                           </button>
                         </Box>
                       </div>

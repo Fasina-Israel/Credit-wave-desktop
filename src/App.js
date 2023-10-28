@@ -13,7 +13,7 @@ import { lazy } from "react";
 
 // const Login = lazy(() => import('../pages/login/Login'));
 import Otp from "./pages/Otp/Otp";
-const DashboardDefault = Loadable(lazy(() => import("./pages/dashboard/Index")));
+const DashboardDefault = Loadable(lazy(() => import("./pages/dashboard/index")));
 
 function App() {
   return (

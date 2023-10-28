@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 // material-ui
-import { useTheme } from '@mui/material/styles';
-import { Stack, Chip } from '@mui/material';
+import { useTheme } from "@mui/material/styles";
+import { Stack, Chip } from "@mui/material";
 
 // project import
-import DrawerHeaderStyled from './DrawerHeaderStyled';
-import Logo from 'components/Logo';
+import DrawerHeaderStyled from "./DrawerHeaderStyled";
+import Logo from "../../../../components/Logo";
 
 // ==============================|| DRAWER HEADER ||============================== //
 
@@ -21,9 +21,12 @@ const DrawerHeader = ({ open }) => {
         <Chip
           label={process.env.REACT_APP_VERSION}
           size="small"
-          sx={{ height: 16, '& .MuiChip-label': { fontSize: '0.625rem', py: 0.25 } }}
+          sx={{
+            height: 16,
+            "& .MuiChip-label": { fontSize: "0.625rem", py: 0.25 },
+          }}
           component="a"
-          href="https://github.com/codedthemes/mantis-free-react-admin-template"
+          href="/"
           target="_blank"
           clickable
         />
@@ -33,7 +36,7 @@ const DrawerHeader = ({ open }) => {
 };
 
 DrawerHeader.propTypes = {
-  open: PropTypes.bool
+  open: PropTypes.bool,
 };
 
 export default DrawerHeader;

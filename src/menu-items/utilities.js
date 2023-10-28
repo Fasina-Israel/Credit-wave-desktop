@@ -1,60 +1,130 @@
 // assets
 import {
+  HomeOutlined,
   AppstoreAddOutlined,
   AntDesignOutlined,
   BarcodeOutlined,
   BgColorsOutlined,
   FontSizeOutlined,
-  LoadingOutlined
-} from '@ant-design/icons';
+  LoadingOutlined,
+  FileTextOutlined,
+  FileProtectOutlined,
+  UserOutlined,
+  SettingOutlined,
+  MobileOutlined,
+  TeamOutlined
+} from "@ant-design/icons";
 
 // icons
 const icons = {
+  HomeOutlined,
   FontSizeOutlined,
   BgColorsOutlined,
   BarcodeOutlined,
   AntDesignOutlined,
   LoadingOutlined,
-  AppstoreAddOutlined
+  AppstoreAddOutlined,
+  FileTextOutlined,
+  FileProtectOutlined,
+  UserOutlined,
+  SettingOutlined,
+  MobileOutlined,
+  TeamOutlined
 };
 
 // ==============================|| MENU ITEMS - UTILITIES ||============================== //
 
 const utilities = {
-  id: 'utilities',
-  title: 'Utilities',
-  type: 'group',
+  id: "utilities",
+  title: "",
+  type: "group",
   children: [
     {
-      id: 'util-typography',
-      title: 'Typography',
-      type: 'item',
-      url: '/typography',
-      icon: icons.FontSizeOutlined
+      id: "util-typography",
+      title: "Dashboard",
+      type: "item",
+      url: "/",
+      icon: icons.HomeOutlined,
     },
     {
-      id: 'util-color',
-      title: 'Color',
-      type: 'item',
-      url: '/color',
-      icon: icons.BgColorsOutlined
+      id: "util-color",
+      title: "Loan Application",
+      type: "item",
+      url: "/",
+      icon: icons.FileTextOutlined,
     },
     {
-      id: 'util-shadow',
-      title: 'Shadow',
-      type: 'item',
-      url: '/shadow',
-      icon: icons.BarcodeOutlined
+      id: "util-shadow",
+      title: "Loan Underwriting",
+      type: "item",
+      url: "/",
+      icon: icons.BarcodeOutlined,
     },
     {
-      id: 'ant-icons',
-      title: 'Ant Icons',
-      type: 'item',
-      url: '/icons/ant',
+      id: "ant-icons",
+      title: "Collection",
+      type: "item",
+      url: "/",
+      icon: icons.FileTextOutlined,
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons2",
+      title: "CRW",
+      type: "item",
+      url: "/",
+      icon: icons.TeamOutlined,
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons3",
+      title: "Administration",
+      type: "item",
+      url: "/",
+      icon: icons.UserOutlined,
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons8",
+      title: "Debt Managemant",
+      type: "item",
+      url: "/",
       icon: icons.AntDesignOutlined,
-      breadcrumbs: false
-    }
-  ]
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons4",
+      title: "Bridge Loan",
+      type: "item",
+      url: "/",
+      icon: icons.AntDesignOutlined,
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons5",
+      title: "Mobile App",
+      type: "item",
+      url: "/",
+      icon: icons.MobileOutlined,
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons6",
+      title: "General Setup",
+      type: "item",
+      url: "/",
+      icon: icons.SettingOutlined,
+      breadcrumbs: false,
+    },
+    {
+      id: "ant-icons7",
+      title: "Report",
+      type: "item",
+      url: "/",
+      icon: icons.FileTextOutlined,
+      breadcrumbs: false,
+    },
+  ],
 };
 
 export default utilities;

@@ -16,6 +16,7 @@
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-copy-to-clipboard": "^5.1.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-element-to-jsx-string": "^15.0.0",
     "react-icons": "^4.9.0",
@@ -28,6 +29,7 @@
     "redux": "^4.2.1",
     "redux-persist": "^6.0.0",
     "sass": "^1.69.4",
+    "simplebar-react": "^3.2.4",
     "validator": "^13.11.0",
     "web-vitals": "^2.1.4"
   },

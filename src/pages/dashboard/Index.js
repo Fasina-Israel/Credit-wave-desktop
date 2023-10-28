@@ -25,7 +25,8 @@ import MonthlyBarChart from "./MonthlyBarChart";
 import ReportAreaChart from "./ReportAreaChart";
 import SalesColumnChart from "./SalesColumnChart";
 // import MainCard from "components/MainCard";
-import AnalyticEcommerce from "./../../components/Cards";
+import AnalyticEcommerce from "../../components/Cards";
+import { BoxAvatar } from "../../assets/BoxAvatar.png";
 
 // assets
 import {
@@ -33,7 +34,8 @@ import {
   MessageOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
-
+import SecondCards from "../../components/SecondCards";
+import ThirdCard from "../../components/ThirdCard";
 
 // avatar style
 const avatarSX = {
@@ -80,23 +82,42 @@ const DashboardDefault = () => {
       <Grid item xs={12} sx={{ mb: -2.25 }}>
         <Typography variant="h5">Dashboard</Typography>
       </Grid>
-      <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce
-          title="Total Page Views"
-          count="4,42,236"
-          percentage={59.3}
-          extra="35,000"
-        />
+      <Grid item xs={12} sm={9} md={4} lg={9}>
+        <AnalyticEcommerce />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce
-          title="Total Users"
-          count="78,250"
-          percentage={70.5}
-          extra="8,900"
+        <ThirdCard
+        // title="Total Users"
+        // count="78,250"
+        // percentage={70.5}
+        // extra="8,900"
         />
       </Grid>
+      <Grid item xs={12} sm={6} md={4} lg={9}>
+        <SecondCards
+        // title="Total Users"
+        // count="78,250"
+        // percentage={70.5}
+        // extra="8,900"
+        />
+      </Grid>
+
       <Grid item xs={12} sm={6} md={4} lg={3}>
+        <ThirdCard
+        // title="Total Users"
+        // count="78,250"
+        // percentage={70.5}
+        // extra="8,900"
+        />
+        <ThirdCard
+        // title="Total Users"
+        // count="78,250"
+        // percentage={70.5}
+        // extra="8,900"
+        />
+      </Grid>
+
+      {/* <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce
           title="Total Order"
           count="18,800"
@@ -115,7 +136,7 @@ const DashboardDefault = () => {
           color="warning"
           extra="$20,395"
         />
-      </Grid>
+      </Grid> */}
 
       <Grid
         item

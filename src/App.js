@@ -13,7 +13,9 @@ import { lazy } from "react";
 
 // const Login = lazy(() => import('../pages/login/Login'));
 import Otp from "./pages/Otp/Otp";
-const DashboardDefault = Loadable(lazy(() => import("./pages/dashboard/index")));
+const DashboardDefault = Loadable(
+  lazy(() => import("./pages/dashboard/DashboardDefault"))
+);
 
 function App() {
   return (

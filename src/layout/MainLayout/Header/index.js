@@ -17,8 +17,8 @@ const Header = ({ open, handleDrawerToggle }) => {
   const theme = useTheme();
   const matchDownMD = useMediaQuery(theme.breakpoints.down("lg"));
 
-  const iconBackColor = "grey.100";
-  const iconBackColorOpen = "grey.200";
+  // const iconBackColor = "grey.100";
+  // const iconBackColorOpen = "grey.200";
 
   // common header
   const mainHeader = (

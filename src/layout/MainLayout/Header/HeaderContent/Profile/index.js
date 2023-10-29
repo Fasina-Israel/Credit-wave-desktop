@@ -112,7 +112,10 @@ const Profile = () => {
             src={avatar1}
             sx={{ width: 32, height: 32 }}
           />
-          <Typography variant="subtitle1" sx={{ color: "white" }}>
+          <Typography
+            variant="subtitle1"
+            sx={{ color: "white", ":hover": { color: "black" } }}
+          >
             Adekunle Adebona
           </Typography>
         </Stack>

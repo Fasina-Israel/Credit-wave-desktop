@@ -17,7 +17,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: #FFF;
 }
 .content-header{
     display:flex;
@@ -53,6 +54,8 @@
     display: flex;
     flex-direction: column;
     background-color: #FFF;
+    padding: 2rem;
+    width:60%
   
 }
 .otp-header-image{
@@ -148,12 +151,17 @@ h5{
 .otp-input{
     width:25vw;
     height:50px;
+    position: relative;
+    padding: 10px;
 }
 .input-section{
     width: 80%;
     height: 62px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    position: relative;
     gap: 0.6rem;
     font-style: normal;
     font-weight: 400;
@@ -162,6 +170,19 @@ h5{
     letter-spacing: -0.004em;
     color: #000;
 
+}
+.counter{
+    position: absolute;
+    top: 10px;
+    left:15rem;
+    color:#00C795;
+}
+.eye-icon{
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer
 }
 .verification-container{
     justify-content: center;
@@ -197,6 +218,22 @@ h5{
     border-color: #00C795;
     border-radius: 5px;
 }
+.otp-form-button{
+    background-color: #00C795;
+    padding-left: 3rem;
+    font-size: 20px;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    height:100%;
+    color: #fff;
+    border-color: #00C795;
+    border-radius: 5px;
+}
+.subtext{
+    width:40vw
+  }
 .forgot-password{
     width: 100%;
 height: 19px;
@@ -237,6 +274,7 @@ color: #2D6CDF;
         align-items: center;
         display: flex;
         flex-direction: row;
+      
     }
     .lockImage-container{
         justify-content: center;
@@ -244,13 +282,13 @@ color: #2D6CDF;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 2rem;
+        padding: 0rem;
         width: 100%;
         box-shadow: none;
     }
 
     .subtext{
-      width:100%
+      width:80%
     }
     .lock-jpeg{
         width:100px;
@@ -265,10 +303,16 @@ color: #2D6CDF;
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 0px;
+    width:100%
     
     }
+    .otp-header-image{
+        height: 20%;
+        margin-bottom: 5%;
+    }
     .otp-input{
-        width:90vw;
+        width:80vw;
         height:50px;
     }
     .verification-container{
@@ -353,6 +397,12 @@ color: #2D6CDF;
     position: relative;
     font-size: 20px;
 }
+.counter{
+    position: absolute;
+    top: 15px;
+    left:16rem;
+    color:#00C795;
+}
 .input-header{
     height: 40px;
     width: 100%;
@@ -381,17 +431,18 @@ color: #2D6CDF;
     display: "flex";
     position: "absolute";
     right: "70px";
-    top: "10px";
+    top: "60px";
     cursor: "pointer";
 }
 
 .form-button{
     background-color: #00C795;
+    margin-top: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 95vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 80vw;
     height:100%;
     color: #fff;
     border-color: none;

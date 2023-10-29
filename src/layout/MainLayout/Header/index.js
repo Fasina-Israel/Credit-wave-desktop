@@ -48,7 +48,7 @@ const Header = ({ open, handleDrawerToggle }) => {
     elevation: 0,
     sx: {
       borderBottom: `1px solid ${theme.palette.divider}`,
-      color: "green",
+      // color: "green",
       // boxShadow: theme.customShadows.z1
     },
   };

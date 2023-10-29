@@ -30,6 +30,7 @@ const SecondCards = ({ color, title, count, percentage, isLoss, extra }) => (
           alignItems: "center",
           flexDirection: "row",
           display: "flex",
+          width: "55vw",
         }}
       >
         <Typography sx={{ fontSize: "20px", fontWeight: "700" }}>
@@ -47,10 +48,10 @@ const SecondCards = ({ color, title, count, percentage, isLoss, extra }) => (
         justifyContent: "space-between",
         alignItems: "center",
         gap: "2rem",
-        width: "100%",
+        width: "50vw",
       }}
     >
-      <Box sx={{ backgroundColor: "#DDFFF7",  padding: "3rem" }}>
+      <Box sx={{ backgroundColor: "#DDFFF7", padding: "3rem" }}>
         <Typography>Recovery </Typography>
       </Box>
       <Box sx={{ backgroundColor: "#DDFFF7", width: "10rem", padding: "3rem" }}>

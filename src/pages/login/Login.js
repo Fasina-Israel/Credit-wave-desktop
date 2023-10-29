@@ -18,6 +18,10 @@ const Login = () => {
   const togglePasswordVisibility = () => {
     setVisible(!visible);
   };
+  const next = () => {
+    console.log("next");
+    navigate("/otp");
+  };
   const [loading, setLoading] = useState(false);
   return (
     <>
@@ -27,7 +31,7 @@ const Login = () => {
           <div className="contentBackgroundImage">
             <div className="content-header">
               <div>
-                <h1>Adroit</h1>
+                <h1 style={{ fontSize: "50px" }}>Adroit</h1>
               </div>
               <Box sx={{ width: "487px", height: "168px" }}>
                 <Typography sx={{ fontSize: "20px", color: "white" }}>
@@ -116,7 +120,6 @@ const Login = () => {
                             placeholder="Password"
                           />
                           <div
-                            className="eye-icon"
                             onClick={togglePasswordVisibility}
                             onKeyDown={togglePasswordVisibility}
                             role="button"
@@ -155,14 +158,15 @@ const Login = () => {
                         >
                           <button
                             className="form-button"
-                            type="submit"
+                            // type="submit"
                             variant="contained"
-                            disabled={!isValid || !dirty}
+                            // disabled={!isValid || !dirty}
+                            onClick={next}
                           >
                             {loading && (
                               <TailSpin color="#FFF" height={20} width={20} />
                             )}
-                            Logins
+                            Login
                           </button>
                         </Box>
                       </div>

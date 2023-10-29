@@ -10,9 +10,9 @@ const AuthRegister = Loadable(lazy(() => import("../pages/Otp/Otp")));
 
 // ==============================|| AUTH ROUTING ||============================== //
 
-const LoginRoutes = {
-  path: "/",
-  element: <AuthLogin />,
+const OtpRoute = {
+  path: "/otp",
+  element: <AuthRegister />,
   children: [
     {
       path: "",
@@ -21,4 +21,4 @@ const LoginRoutes = {
   ],
 };
 
-export default LoginRoutes;
+export default OtpRoute;

@@ -33,7 +33,7 @@ const ThirdCard = ({
       flexDirection: "column",
     }}
   >
-    <Box sx={{ width: "100%", height: "100%", display: "flex" }}>
+    <Box sx={{ width: "9rem", height: "100%", display: "flex" }}>
       <img src={avatar} alt="" />
     </Box>
     <Box></Box>

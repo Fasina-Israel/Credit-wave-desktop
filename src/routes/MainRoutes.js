@@ -19,11 +19,11 @@ const AntIcons = Loadable(lazy(() => import('../pages/components-overview/AntIco
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
-  path: '/',
+  path: '/dashboard',
   element: <MainLayout />,
   children: [
     {
-      path: '/',
+      path: '/dashboard',
       element: <DashboardDefault />
     },
     {

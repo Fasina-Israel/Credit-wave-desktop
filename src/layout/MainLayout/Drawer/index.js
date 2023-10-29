@@ -28,7 +28,7 @@ const MainDrawer = ({ open, handleDrawerToggle, window }) => {
   return (
     <Box
       component="nav"
-      sx={{ flexShrink: { md: 0 }, zIndex: 1300, backgroundColor: "green" }}
+      sx={{ flexShrink: { md: 0 }, zIndex: 1300, backgroundColor: "red" }}
       aria-label="mailbox folders"
     >
       {!matchDownMD ? (

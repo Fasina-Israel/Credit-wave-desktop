@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import "../../components/content/Styles.css";
@@ -13,13 +13,22 @@ import validator from "validator";
 import { TailSpin } from "react-loader-spinner";
 
 const Otp = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [otp, setOtp] = React.useState("");
   const [loading, setLoading] = useState(false);
-
+  const next = () => {
+    console.log("next");
+    navigate("/dashboard");
+  };
   const handleChange = (newValue) => {
     setOtp(newValue);
   };
+  const [counter, setCounter] = useState("59");
+  useEffect(() => {
+    const timer =
+      counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
+    return () => clearInterval(timer);
+  }, [counter]);
 
   return (
     <>
@@ -111,7 +120,7 @@ const Otp = () => {
                               onBlur={handleBlur}
                               placeholder="Verification code"
                             />
-
+                            <div className="counter">{"00:" + counter}</div>
                             <div className="error-message">
                               {touched.email && errors.email ? (
                                 <div>{errors.email}</div>
@@ -137,10 +146,11 @@ const Otp = () => {
                             }}
                           >
                             <button
-                              className="form-button"
-                              type="submit"
+                              className="otp-form-button"
+                              // type="submit"
                               variant="contained"
-                              disabled={!isValid || !dirty}
+                              // disabled={!isValid || !dirty}
+                              // onClick={next}
                             >
                               {loading && (
                                 <TailSpin color="#FFF" height={20} width={20} />

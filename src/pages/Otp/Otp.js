@@ -80,7 +80,7 @@ const Otp = () => {
                 validate={(values) => {
                   const errors = {};
                   if (!values.email) {
-                    errors.email = "Email cannot be empty !";
+                    errors.email = "Input field cannot be empty !";
                   } else if (!validator.isEmail(values.email)) {
                     errors.email = "Please enter a valid email !";
                   }
@@ -121,11 +121,7 @@ const Otp = () => {
                               placeholder="Verification code"
                             />
                             <div className="counter">{"00:" + counter}</div>
-                            <div className="error-message">
-                              {touched.email && errors.email ? (
-                                <div>{errors.email}</div>
-                              ) : null}
-                            </div>
+                            <div className="error-message"></div>
                           </div>
                           {/* <div>
                           <h5

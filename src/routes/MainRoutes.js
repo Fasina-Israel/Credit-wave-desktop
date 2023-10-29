@@ -3,9 +3,10 @@ import { lazy } from 'react';
 // project import
 import Loadable from '../components/Loadable';
 import MainLayout from '../layout/MainLayout';
+import DashboardDefault from '../pages/dashboard';
 
 // render - dashboard
-const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/index')));
+const DashboardDefaults = Loadable(lazy(() => <DashboardDefault/>));
 
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('./../pages/extra-pages/SamplePage')));
@@ -24,7 +25,7 @@ const MainRoutes = {
   children: [
     {
       path: '/dashboard',
-      element: <DashboardDefault />
+      element: <DashboardDefaults />
     },
     {
       path: 'color',

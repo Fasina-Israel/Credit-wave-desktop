@@ -55,7 +55,7 @@ const Otp = () => {
                     fontWeight: "400",
                   }}
                 >
-                  Enter the six (6) digit verification code sent to
+                  Enter these six (6) digit verification code sent to
                   +234913*****4** and A******na@creditwaveng.com to continue
                 </Typography>
               </div>

@@ -18,6 +18,10 @@ const Login = () => {
   const togglePasswordVisibility = () => {
     setVisible(!visible);
   };
+  const next = () => {
+    console.log("next");
+    navigate("/otp");
+  };
   const [loading, setLoading] = useState(false);
   return (
     <>
@@ -27,7 +31,7 @@ const Login = () => {
           <div className="contentBackgroundImage">
             <div className="content-header">
               <div>
-                <h1>Adroit</h1>
+                <h1 style={{ fontSize: "50px" }}>Adroit</h1>
               </div>
               <Box sx={{ width: "487px", height: "168px" }}>
                 <Typography sx={{ fontSize: "20px", color: "white" }}>
@@ -46,7 +50,7 @@ const Login = () => {
             <img
               src={AdroitLogo}
               alt=""
-              style={{ backgroundColor: "white", width: "70%" }}
+              style={{ backgroundColor: "white", width: "50%" }}
             />
           </div>
           <div className="form">
@@ -85,18 +89,20 @@ const Login = () => {
                   <div>
                     <div>
                       <div className="input-container">
+                        <div className="input-header">
+                          <h4 className="input-header-text">Login</h4>
+                        </div>
                         <div className="input-section">
-                          <div>
-                            <Field
-                              className="input"
-                              id="name"
-                              type="text"
-                              name="name"
-                              value={values.name}
-                              onBlur={handleBlur}
-                              placeholder="Enter your name"
-                            />
-                          </div>
+                          <Field
+                            className="input"
+                            id="name"
+                            type="text"
+                            name="name"
+                            value={values.name}
+                            onBlur={handleBlur}
+                            placeholder="Username"
+                          />
+
                           <div className="error-message">
                             {touched.email && errors.email ? (
                               <div>{errors.email}</div>
@@ -104,35 +110,28 @@ const Login = () => {
                           </div>
                         </div>
                         <div className="input-section">
-                          <div>
-                            <Field
-                              className="input"
-                              id="password"
-                              type={visible ? "text" : "password"}
-                              name="password"
-                              value={values.password}
-                              onBlur={handleBlur}
-                            />
-                            <div
+                          <Field
+                            className="input"
+                            id="password"
+                            type={visible ? "text" : "password"}
+                            name="password"
+                            value={values.password}
+                            onBlur={handleBlur}
+                            placeholder="Password"
+                          />
+                          <div
+                            onClick={togglePasswordVisibility}
+                            onKeyDown={togglePasswordVisibility}
+                            role="button"
+                            tabIndex={0}
+                          >
+                            <img
                               className="eye-icon"
-                              onClick={togglePasswordVisibility}
-                              onKeyDown={togglePasswordVisibility}
-                              role="button"
-                              tabIndex={0}
-                            >
-                              <img
-                                src={visible ? EyeOpen : EyeSlash}
-                                alt=""
-                                style={{
-                                  display: "flex",
-                                  position: "absolute",
-                                  right: "13rem",
-                                  top: "25.5rem",
-                                  cursor: "pointer",
-                                }}
-                              />
-                            </div>
+                              src={visible ? EyeOpen : EyeSlash}
+                              alt=""
+                            />
                           </div>
+
                           <div>
                             {touched.password && errors.password ? (
                               <div>{errors.password}</div>
@@ -159,14 +158,15 @@ const Login = () => {
                         >
                           <button
                             className="form-button"
-                            type="submit"
+                            // type="submit"
                             variant="contained"
-                            disabled={!isValid || !dirty}
+                            // disabled={!isValid || !dirty}
+                            onClick={next}
                           >
                             {loading && (
                               <TailSpin color="#FFF" height={20} width={20} />
                             )}
-                            Logins
+                            Login
                           </button>
                         </Box>
                       </div>
